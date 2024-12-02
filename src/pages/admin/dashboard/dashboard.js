@@ -5,14 +5,14 @@ export default function Dashboard() {
   const [isCollapsed, setIsCollapsed] = useState(false);
   const [activeMenu, setActiveMenu] = useState(null);
 
-  // Toggle sidebar
+
   const toggleSidebar = () => {
     setIsCollapsed(!isCollapsed);
   };
 
-  // Toggle sub-menu visibility
+
   const toggleSubMenu = (menu) => {
-    setActiveMenu(activeMenu === menu ? null : menu); // Toggle between showing and hiding
+    setActiveMenu(activeMenu === menu ? null : menu); 
   };
 
   return (
@@ -26,33 +26,31 @@ export default function Dashboard() {
         </div>
 
         <ul className="menu">
-          <li onClick={() => toggleSubMenu('dashboard')}>Dashboard</li>
+          <li >Dashboard</li>
           <li onClick={() => toggleSubMenu('userManagement')}>User Management</li>
-             {/* Sub-menu for User Management */}
           <ul className={`submenu ${activeMenu === 'userManagement' ? 'show' : ''}`}>
-            <li>Sub-item 1</li>
-            <li>Sub-item 2</li>
-            <li>Sub-item 3</li>
+            <li>Check me out</li>
+            <li>Check me out 2</li>
+            <li>Check me out 3</li>
           </ul>
 
 
 
-          <li onClick={() => toggleSubMenu('branchManagement')}>Branch Management</li>
-          <li onClick={() => toggleSubMenu('usageStatistics')}>Usage Statistics</li>
+          <li>Branch Management</li>
+          <li>Usage Statistics</li>
 
           <li onClick={() => toggleSubMenu('apiDocumentation')}>Api Documentation</li>
-          {/* Sub-menu for API Documentation */}
           <ul className={`submenu ${activeMenu === 'apiDocumentation' ? 'show' : ''}`}>
-            <li>Sub-item 1</li>
-            <li>Sub-item 2</li>
-            <li>Sub-item 3</li>
+            <li>Check me out</li>
+            <li>Check me out 2</li>
+            <li>Check me out 3</li>
           </ul>
 
-          <li onClick={() => toggleSubMenu('credentials')}>Credentials</li>
-          <li onClick={() => toggleSubMenu('apiStatus')}>API Endpoint Status</li>
-          <li onClick={() => toggleSubMenu('rolesPermissions')}>Roles and Permissions</li>
-          <li onClick={() => toggleSubMenu('history')}>History</li>
-          <li onClick={() => toggleSubMenu('activityLogs')}>Activity Logs</li>
+          <li>Credentials</li>
+          <li>API Endpoint Status</li>
+          <li>Roles and Permissions</li>
+          <li>History</li>
+          <li>Activity Logs</li>
         </ul>
         
         <button className="logout">Log Out</button>

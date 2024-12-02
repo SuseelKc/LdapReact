@@ -20,8 +20,11 @@
   /* Sidebar */
   .sidebar {
     width: 250px;
-    background-color: #2c3e50;
+    /* background-color: #2c3e50; */
+    background-color: #112031;
+    opacity: 85%;
     color: white;
+
     display: flex;
     flex-direction: column;
     transition: width 0.3s ease;
@@ -101,10 +104,11 @@
   /* Sub-menu */
   .submenu {
     list-style: none;
-    padding: 0 0 0 20px;
+    padding: 0 0 0 0px;
+    margin: 0 0 0 40px;
     display: none; /* Hidden by default */
     flex-direction: column;
-    background-color: #34495e; /* Slightly darker background for sub-menu */
+    /* background-color: #112031; */
     margin-top: 10px;
   }
   
