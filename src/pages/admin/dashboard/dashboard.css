@@ -62,7 +62,7 @@
   /* Menu */
   .menu {
     list-style: none;
-    padding: 0;
+    padding: 10px 10px;
     margin: 10px 0;
     overflow-y: auto; /* Makes the menu scrollable */
     height: calc(100vh - 120px); /* Adjust height for scrollable space */
